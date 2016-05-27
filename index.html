@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Restaurant Example 5-27-2016</title>
+    <script src="scripts/restaurant.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>Chez Henri's</h1>
+    <h2>Create Table</h2>
+    Name:<input type="text" id="nameIn" value="">
+    Capacity:<input type="text" id="capacityIn" value="">
+    <button type="button" name="createTableButton" onclick="addTable();">Add Table</button>
+    <h2>Change Table Status</h2>
+    Name:<input type="text" id="statusNameIn" value="">
+    Status:<select id="statusIn">
+        <option value="empty">EMPTY</option>
+        <option value="seated">SEATED</option>
+        <option value="served">SERVED</option>
+        <option value="dirty">DIRTY</option>
+      </select>
+    <button type="button" name="createStatusButton" onclick="changeStatus();">Change Table Status</button>
+    <div id='outputDiv'></div>
+  </body>
+</html>
